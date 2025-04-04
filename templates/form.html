@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Apartment</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add Apartment</h1>
+    <form id="apartmentForm">
+        <input type="text" id="person" placeholder="Person Name" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="description" placeholder="Apartment Description" required>
+      <input type="text" id="quality" placeholder="Apartment Quality" required>
+      <input type="number" id="price" step="0.01" placeholder="Price" required>
+      <select id="reference_type">
+        <option value="Broker">Broker</option>
+        <option value="Owner">Owner</option>
+      </select>
+      <input type="number" id="ref_id" placeholder="Reference ID" required>
+      <input type="text" id="location" placeholder="Apartment Location" required>
+      <div class="button-group">
+        <button type="submit">Add Entry</button>
+        <button type="button" onclick="clearForm()">Clear Fields</button>
+        <a href="/table"><button type="button">Cancel</button></a>
+      </div>
+    </form>
+  </div>
+  <script src="/static/form.js"></script>
+</body>
+</html>
